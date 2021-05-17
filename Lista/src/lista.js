@@ -30,12 +30,13 @@ module.exports = class Lista {
         }
     }
 
-    remove(clave, valor){
+    remove(){
         
         const index = this.#elementos.indexOf(1)
         if(index>-1){
-            return this.#elementos.slice({clave, valor})
+            return this.#elementos.splice(index,1)
         }
+        return this.#elementos;
     }
 
 }
