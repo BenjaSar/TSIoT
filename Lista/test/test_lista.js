@@ -10,7 +10,7 @@ const Lista = require("../src/lista.js");
 describe("en una lista vacia" , function() {
     var lista = new Lista();
     it("hay cero elementos", function() {
-        assert.equal(lista.count(), 0);
+        assert.strictEqual(lista.count(), 0);
     })
 
     it("No se encuentra ninguna clave", function(){
@@ -38,10 +38,10 @@ describe("Cuando se agrega un elemento a la lista vacia", function(){
 })
 
 describe("Cuando se elimina un elemento de la lista", function(){
-    var lista = new Lista();
-
-    it("Debería retornar -1 cual el elemento no está en la lista", function(){
-        assert.equal(lista.remove("clave"))
+    var lista = new Lista()   
+    
+    it("Debería retornar -1 lo cual indica que el elemento no está en la lista", function(){
+        assert.equal(lista.remove("casa"))
     })
 
 })
