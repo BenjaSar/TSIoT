@@ -14,13 +14,16 @@ module.exports = class Lista {
         if(this.#elementos.length == 1){
             return this.#elementos[0].valor;
         }
+        if(this.#elementos.length>1){
+            this.#elementos.sort((a,b)=>(a.clave>b.clave) ?  1:-1)
+        };
+
         return NaN
     }
 
     add(clave, valor){
         let updatedKey;
         this.#elementos.push({clave,valor});
-        this.#elementos.count += 1;
 
         if(clave !== this.#elementos.clave){
             return this.#elementos.clave = updatedKey;
@@ -30,12 +33,12 @@ module.exports = class Lista {
         }
     }
 
-    remove(element){
+    remove(clave){
         
-        const index = this.#elementos.indexOf(element)
+        const index = this.#elementos.indexOf(clave)
         while(index>-1){
             this.#elementos.splice(index,1)
-            index = this.#elementos.indexOf(element)
+            index = this.#elementos.indexOf(clave)
         }
     }
 }

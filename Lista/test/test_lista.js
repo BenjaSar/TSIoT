@@ -35,6 +35,11 @@ describe("Cuando se agrega un elemento a la lista vacia", function(){
     it("Agregar clave y actualizar clave", function(){
         assert.equal(lista.find("updatedKey"), "valor")
     })
+
+    it("Lista de claves ordenada", function(){
+        assert.strictEqual(lista.find("computador"), "mouse");
+        assert.strictEqual(lista.find("microfono"), "teclado"); 
+    })
 })
 
 describe("Cuando se elimina un elemento de la lista", function(){
