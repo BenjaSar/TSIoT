@@ -1,4 +1,4 @@
-![header](doc/LogoHeader.png)
+![header](doc/header.png)
 # TESTING PARA SISTEMAS DE INTERNET DE LAS COSAS - MIoT - FIUBA
 ---
 
@@ -12,4 +12,4 @@ Autor: FS - 2021
 
 ## LICENCIA
 Este proyecto se encuentra publicado bajo la licencia MIT. En [este enlace](https://opensource.org/licenses/MIT) podrá encontrar más información sobre la misma.
-![footer](doc/LogoFooter.png)
+![footer](doc/footer.png)
