@@ -8,8 +8,8 @@ Autor: FS - 2021
 ## TABLA DE CONTENIDO
 ---
 1. [Introduccion General](#Introduccion)
-2. [Test Driven Development - TDD]
-3. [Behavior Driven Development - BDD]
+2. [Test Driven Development - TDD](#TDD)
+3. [Behavior Driven Development - BDD](#BDD)
 4. [Licencia](#Licencia)
 
 ## Introduccion general
