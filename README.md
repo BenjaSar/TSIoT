@@ -23,7 +23,7 @@ es codigo escrito. En la figura 1 se puede observar el paradigma de este tipo de
 Con esta practica se consigue entre otras cosas: un codigo mas robusto, mas seguro, mas mantenible y una mayor rapidez en el desarrollo.
 
 <p align="center">
-    <img src="doc/TDD.png" width = "200" height = "200"><br>
+    <img src="doc/TDD.png"><br>
     <b>Figura 1</b>. Desarrollo guiado por pruebas.
 </p>
 
@@ -36,7 +36,7 @@ El paradigma BDD se puede observar en la figura 2.
 
 
 <p align="center">
-    <img src="doc/BDD.png"><br>
+    <img src="doc/BDD.png" widtt = "200" height = "200" ><br>
     <b>Figura 2</b>. Desarrollo guiado por comportamiento.
 </p>
 
