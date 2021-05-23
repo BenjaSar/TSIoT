@@ -108,12 +108,12 @@ Antes de ejecturar las pruebas se deben ejecutar los siguientes pasos:
 *Ajustes en el package.json
 	```
 	"scripts": {
- 		"test": "cucumber-js --publish-quiet",
- 		"coverage": "nyc --reporter=html cucumber-js --publish-quiet"
- 	},
- 	"nyc": {
- 		"exclude": "features/**"
- 	}
+		"test": "cucumber-js --publish-quiet",
+		"coverage": "nyc --reporter=html cucumber-js --publish-quiet"
+	},
+	"nyc": {
+	"exclude": "features/**"
+	}
 	```
 ## LICENCIA
 Este proyecto se encuentra publicado bajo la licencia MIT. En [este enlace](https://opensource.org/licenses/MIT) podrá encontrar más información sobre la misma.
