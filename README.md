@@ -23,25 +23,25 @@ las herramientas de testing ***Testing Driven Development(TDD)***(Lista)  y ***B
 El proyecto se encuentra conformado por los siguientes directorios:
 
 	TSIoT
-	 |
-	 |── Lista
-  	 |	|── src
-	 |	|     |── lista.js	
-	 |	|── test
-	 |	      |── test_lista.js	
-	 |
-	 |── ListaBDD
-	 |	|── src
-	 |	|     |── lista.js	
-	 |	|── features
-	 |		|── step_definitions
-	 |		|		   |── lista_steps.js	
-	 |		|
-	 |		|── gestion.feature
-	 |
-	 |── README.md
-	 |
-	 |── doc	
+	 │
+	 │── Lista
+  	 │	│── src
+	 │	│     |── lista.js	
+	 │	│── test
+	 │	      |── test_lista.js	
+	 │
+	 │── ListaBDD
+	 │	│── src
+	 │	│     │── lista.js	
+	 │	│── features
+	 │		│── step_definitions
+	 │		│		   │── lista_steps.js	
+	 │		│
+	 │		│── gestion.feature
+	 │
+	 │── README.md
+	 │
+	 │── doc	
 
 		
 ## Test Driven Development - TDD
