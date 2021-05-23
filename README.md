@@ -74,11 +74,12 @@ Para llevar a cabo las pruebas, previamente se deberan realizar los siguientes p
 	npm install --save mocha chai nyc
 
 * Ajustes en el packet.json
+	```
 	"scripts": {
 		"test": "mocha --reporter spec",
 		"coverage": "nyc --reporter=html mocha"
 	},
-
+	```
 
 ## Behavior Driven Development - BDD
 
@@ -105,6 +106,7 @@ Antes de ejecturar las pruebas se deben ejecutar los siguientes pasos:
 	npm install --save @cucumber/cucumber chai nyc
 
 *Ajustes en el package.json
+	```
 	"scripts": {
  		"test": "cucumber-js --publish-quiet",
  		"coverage": "nyc --reporter=html cucumber-js --publish-quiet"
@@ -112,7 +114,7 @@ Antes de ejecturar las pruebas se deben ejecutar los siguientes pasos:
  	"nyc": {
  		"exclude": "features/**"
  	}
-
+	```
 ## LICENCIA
 Este proyecto se encuentra publicado bajo la licencia MIT. En [este enlace](https://opensource.org/licenses/MIT) podrá encontrar más información sobre la misma.
 ![footer](doc/footer.png)
