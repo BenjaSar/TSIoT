@@ -105,7 +105,7 @@ Antes de ejecturar las pruebas se deben ejecutar los siguientes pasos:
 * Instalacion de los paquetes de prueba
 	npm install --save @cucumber/cucumber chai nyc
 
-*Ajustes en el package.json
+* Ajustes en el package.json
 	```
 	"scripts": {
 		"test": "cucumber-js --publish-quiet",
