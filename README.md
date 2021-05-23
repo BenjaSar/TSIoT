@@ -8,15 +8,42 @@ Autor: FS - 2021
 ## TABLA DE CONTENIDO
 ---
 1. [Introduccion General](#Introduccion)
-2. [Test Driven Development - TDD](#TDD)
-3. [Behavior Driven Development - BDD](#BDD)
-4. [Licencia](#Licencia)
+2. [Organizacion del proyecto](#Organizacion)
+3. [Test Driven Development - TDD](#TDD)
+4. [Behavior Driven Development - BDD](#BDD)
+5. [Licencia](#Licencia)
 
 ## Introduccion general
 
 Los ***Trabajos practicos 2 y 3*** de la materia ***Testing para Sistemas de Internet de las Cosas*** consisten en el desarrollo de dos codigos en javascript empleando
 las herramientas de testing ***Testing Driven Development(TDD)***(Lista)  y ***Behavior Driven Development(BDD)***(ListaBDD). 
 
+## Organizacion del proyecto
+
+El proyecto se encuentra conformado por los siguientes directorios:
+
+	TSIoT
+	 |
+	 |── Lista
+  	 |	|── src
+	 |	|     |── lista.js	
+	 |	|── test
+	 |	      |── test_lista.js	
+	 |
+	 |── ListaBDD
+	 |	|── src
+	 |	|     |── lista.js	
+	 |	|── features
+	 |		|── step_definitions
+	 |		|		   |── lista_steps.js	
+	 |		|
+	 |		|── gestion.feature
+	 |
+	 |── README.md
+	 |
+	 |── doc	
+
+		
 ## Test Driven Development - TDD
 
 Es una practica de programacion que consiste de en escribir primero las pruebas(generalmente unitarias), despues escribir el codigo fuente que pase la prueba satisfactoriamente y, por ultimo, refactorizar 
