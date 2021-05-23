@@ -8,15 +8,23 @@ Autor: FS - 2021
 ## TABLA DE CONTENIDO
 ---
 1. [Introduccion General](#Introduccion)
+2. [Instalacion de dependencias](#Dependencias)
 2. [Organizacion del proyecto](#Organizacion)
 3. [Test Driven Development - TDD](#TDD)
+	* [Ejecucion del proyecto](#EjecucionTDD)
 4. [Behavior Driven Development - BDD](#BDD)
+	* [Ejecucion del proyecto](#EjecucioBDD)
 5. [Licencia](#Licencia)
 
 ## Introduccion general
 
 Los ***Trabajos practicos 2 y 3*** de la materia ***Testing para Sistemas de Internet de las Cosas*** consisten en el desarrollo de dos codigos en javascript empleando
-las herramientas de testing ***Testing Driven Development(TDD)***(Lista)  y ***Behavior Driven Development(BDD)***(ListaBDD). 
+las herramientas de testing ***Testing Driven Development(TDD)***  y ***Behavior Driven Development(BDD)***. 
+
+## Instalacion de dependencias
+
+Para poder ejecutar las pruebas, se requiere haber instalado **Node.js** junto con el gestor de paquetes 'npm'. Una vez hecho esto, se podra continuar con las indicaciones dadas en 
+
 
 ## Organizacion del proyecto
 
@@ -56,6 +64,22 @@ Con esta practica se consigue entre otras cosas: un codigo mas robusto, mas segu
     <b>Figura 1</b>. Desarrollo guiado por pruebas.
 </p>
 
+### Ejecucion del proyecto
+Para llevar a cabo las pruebas, previamente se deberan realizar los siguientes pasos:
+
+* Creacion del proyecto
+	npm init
+
+* Instalacion de los paquetes de prueba
+	npm install --save mocha chai nyc
+
+* Ajustes en el packet.json
+	"scripts": {
+		"test": "mocha --reporter spec",
+		"coverage": "nyc --reporter=html mocha"
+	},
+
+
 ## Behavior Driven Development - BDD
 
 El Desarrollo guiado por comportamiento es una rama del Desarrollo guiado por pruebas. BDD es un conjunto de practicas de ingenieria de software diseñado 
@@ -69,6 +93,25 @@ El paradigma BDD se puede observar en la figura 2.
     <b>Figura 2</b>. Desarrollo guiado por comportamiento.
 </p>
 
+
+### Ejecucion del proyecto
+
+Antes de ejecturar las pruebas se deben ejecutar los siguientes pasos:
+    
+* Creacion del proyecto
+	npm init
+
+* Instalacion de los paquetes de prueba
+	npm install --save @cucumber/cucumber chai nyc
+
+*Ajustes en el package.json
+	"scripts": {
+ 		"test": "cucumber-js --publish-quiet",
+ 		"coverage": "nyc --reporter=html cucumber-js --publish-quiet"
+ 	},
+ 	"nyc": {
+ 		"exclude": "features/**"
+ 	}
 
 ## LICENCIA
 Este proyecto se encuentra publicado bajo la licencia MIT. En [este enlace](https://opensource.org/licenses/MIT) podrá encontrar más información sobre la misma.
