@@ -25,6 +25,7 @@ Escenario: buscar un elemento en una lista con datos
     | "letras" | abcde |
     | "numero" |   7   |
     Entonces la lista tiene 2 elemento almacenado
+    
     Cuando agrego la nueva clave "<casa>" con el valor mesa
     Entonces deberia ver la lista en el siguiente orden
     |  clave   | valor |
@@ -36,6 +37,12 @@ Escenario: buscar un elemento en una lista con datos
     | "numero" |   7   |
     | "letras" | abcde |
     |  "casa"  |  mesa |
+  
+    Cuando elimino la clave "letras" con el valor abcde
+    Entonces debería mostrar la lista con un elemento menos
+    |  clave   | valor |
+    |  "casa"  |  mesa |
+    | "numero" |   7   |
 
   
 

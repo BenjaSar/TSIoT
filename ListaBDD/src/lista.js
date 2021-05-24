@@ -28,4 +28,16 @@ module.exports = class Lista{
     sort_descending(){
         return this.#elementos.sort(function(a,b){return b-a});
     }
+
+    remove(clave){
+        var i = 0;
+        while (i<this.#elementos.length){
+            if(this.#elementos[i].clave === clave){
+                this.#elementos.splice(i,1)
+            } else {
+                ++i;
+            }
+        }
+        return this.#elementos
+    }
 }
