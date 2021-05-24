@@ -20,6 +20,10 @@ When('agrego la clave {string} con el valor {}', function (clave, valor) {
     expect(contexto.lista.add(clave,valor));
 });
 
+When('agrego la nueva clave {string} con el valor {}', function(clave,valor){
+    expect(contexto.lista.add(clave, valor));
+});
+
 Then('la lista tiene {int} elemento(s) almacenado(s)', function (cantidad) {
     expect(contexto.lista.count()).to.be.equal(cantidad);
 });
@@ -30,4 +34,13 @@ Then('si busco la clave {string} no obtengo ningun valor',function(clave){
 
 Then('si busco la clave {string} obtengo el valor {}',function(clave, valor){
     expect(contexto.lista.find(clave)).to.be.equal(valor);
-}) 
+});
+
+Then('deberia ver la lista en el siguiente orden',function(clave){
+    expect(contexto.lista.sort());
+});
+
+Then('deberia ver la lista en el orden inverso', function (clave) {
+    expect(contexto.lista.sort_descending())
+  });
+

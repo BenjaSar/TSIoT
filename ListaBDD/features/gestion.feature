@@ -21,7 +21,25 @@ Esquema del escenario: Agregar datos a una lista vacía
 
 Escenario: buscar un elemento en una lista con datos
     Dado una lista con los siguientes elementos
-    | clave | valor    |
+    |  clave   | valor |
     | "letras" | abcde |
     | "numero" |   7   |
     Entonces la lista tiene 2 elemento almacenado
+    Cuando agrego la nueva clave "<casa>" con el valor mesa
+    Entonces deberia ver la lista en el siguiente orden
+    |  clave   | valor |
+    |  "casa"  |  mesa |
+    | "letras" | abcde |
+    | "numero" |   7   |
+    Entonces deberia ver la lista en el orden inverso
+    |  clave   | valor |
+    | "numero" |   7   |
+    | "letras" | abcde |
+    |  "casa"  |  mesa |
+
+  
+
+    
+
+    
+

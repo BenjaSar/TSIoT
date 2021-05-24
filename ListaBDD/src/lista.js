@@ -20,4 +20,12 @@ module.exports = class Lista{
     add(clave, valor){
         this.#elementos.push({clave, valor});
     }
+
+    sort(){
+        return this.#elementos.sort(function(a,b){return a-b});
+    } 
+
+    sort_descending(){
+        return this.#elementos.sort(function(a,b){return b-a});
+    }
 }
