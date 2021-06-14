@@ -14,12 +14,14 @@ Autor: FS - 2021
 	* [Ejecucion del proyecto](#EjecucionTDD)
 4. [Behavior Driven Development - BDD](#BDD)
 	* [Ejecucion del proyecto](#EjecucioBDD)
-5. [Licencia](#Licencia)
+5. [Qonarsube]
+	* [Ejecución sonarqube](#EjecucionSonar)
+6. [Licencia](#Licencia)
 
 ## Introduccion general
 
 Los ***Trabajos practicos 2 y 3*** de la materia ***Testing para Sistemas de Internet de las Cosas*** consisten en el desarrollo de dos codigos en javascript empleando
-las herramientas de testing ***Testing Driven Development(TDD)***  y ***Behavior Driven Development(BDD)***. 
+las herramientas de testing ***Testing Driven Development(TDD)***  y ***Behavior Driven Development(BDD)***.  La carpeta TP5 consiste en casos de prueba llevados a cabo sobre el archivo peajes.py empleando la herramienta sonarqube.
 
 ## Instalacion de dependencias
 
@@ -46,6 +48,13 @@ El proyecto se encuentra conformado por los siguientes directorios:
 	 │		│		   │── lista_steps.js	
 	 │		│
 	 │		│── gestion.feature
+     |     
+	 |
+	 |── TP5
+	 |  |── docker-compose.yml
+	 |  |── sonar-project.properties
+	 |  |── peajes.py
+	 |   
 	 │
 	 │── README.md
 	 │
@@ -115,6 +124,16 @@ Antes de ejecturar las pruebas se deben ejecutar los siguientes pasos:
 	"exclude": "features/**"
 	}
 	```
+
+## Sonarqube
+
+Sonarqube es una plataforma de código abierto desarrollada por Sonarsources para inspección continua de calidad de código (revisión automática). El análisis es efectuado de forma estática con el objetivo de detectar *bugs*, *codigo smells* y vulnerabilidades de seguridad. En la figura mostrada abajo se podrá observar el resultado obtenido para uno de los códigos evaludados en este trabajo.
+
+<p align="center">
+    <img src="Sonarqube.png" widtt = "250" height = "250" ><br>
+    <b>Figura 3</b>. Resultado obtenido con la herramienta Sonarqube.
+</p>
+
 ## LICENCIA
 Este proyecto se encuentra publicado bajo la licencia MIT. En [este enlace](https://opensource.org/licenses/MIT) podrá encontrar más información sobre la misma.
 ![footer](doc/footer.png)
