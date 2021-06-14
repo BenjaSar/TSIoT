@@ -130,8 +130,8 @@ Antes de realizar las pruebas se deben llevar a cabo los siguientes pasos:
 Sonarqube es una plataforma de código abierto desarrollada por Sonarsources para inspección continua de calidad de código (revisión automática). El análisis es efectuado de forma estática con el objetivo de detectar *bugs*, *codigo smells* y vulnerabilidades de seguridad. En la figura 3 se podrá observar el resultado obtenido para uno de los códigos evaludados en este trabajo.
 
 <p align="center">
-    <img src="doc/Sonarqube.png" widtt = "250" height = "250" ><br>
-    <b>Figura 3</b>. Resultado obtenido con la herramienta Sonarqube.
+    <img src="doc/login.png" widtt = "250" height = "250" ><br>
+    <b>Figura 4</b>. Logueo en la página de Sonarqube.
 </p>
 
 ### Ejecución sonarqube
@@ -143,7 +143,6 @@ docker pull sonarqube
 
 ```
 Para la correcta ejecución de la imagen, el desarrollador recomienda los siguientes volumenes:
-
 ```
  *  /opt/sonarqube/conf: Para archivos de configuración como sonar.properties
  * /opt/sonarqube/data: archivos de la base de dato, como H2.
@@ -151,10 +150,20 @@ Para la correcta ejecución de la imagen, el desarrollador recomienda los siguie
  * /opt/sonarqube/extensions: para *plugins* de terceros
 ```
 
-Una vez contruido el archivo de docker compose y para ejecutar la imagen correr en la terminal el siguiente comando:
+Una vez contruido el archivo de docker compose y para ejecutar la imagen, correr en la terminal el siguiente comando:
+
 ```
-docker-compose up.
+docker-compose up
 ```
+
+Posteriormente ir a la dirección: http://localhost:9000 y loguearse en la página de SonarQube (ver figura 4) con el usuario y claves creados.
+
+<p align="center">
+    <img src="doc/login.png" widtt = "250" height = "250" ><br>
+    <b>Figura 3</b>. Login en la página de Sonarqube.
+</p>
+
+
 
 ## LICENCIA
 Este proyecto se encuentra publicado bajo la licencia MIT. En [este enlace](https://opensource.org/licenses/MIT) podrá encontrar más información sobre la misma.
