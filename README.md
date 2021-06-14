@@ -130,7 +130,7 @@ Antes de realizar las pruebas se deben llevar a cabo los siguientes pasos:
 Sonarqube es una plataforma de código abierto desarrollada por Sonarsources para inspección continua de calidad de código (revisión automática). El análisis es efectuado de forma estática con el objetivo de detectar *bugs*, *codigo smells* y vulnerabilidades de seguridad. En la figura 3 se podrá observar el resultado obtenido para uno de los códigos evaludados en este trabajo.
 
 <p align="center">
-    <img src="doc/Sonarqube.png" widtt = "500" height = "300" ><br>
+    <img src="doc/Sonarqube.png" widtt = "250" height = "250" ><br>
     <b>Figura 3</b>. Resultado obtenido con la herramienta Sonarqube.
 </p>
 
