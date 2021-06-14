@@ -10,13 +10,11 @@ services:
       - SONARQUBE_JDBC_PASSWORD=password1
     ports:
       - "9000:9000"
-      - "9092:9092"
     volumes:
       - sonarqube_conf:/opt/sonarqube/conf
       - sonarqube_data:/opt/sonarqube/data
       - sonarqube_extensions:/opt/sonarqube/extensions
       - sonarqube_bundled-plugins:/opt/sonarqube/lib/bundled-plugins
- 
  
 volumes:
   sonarqube_bundled-plugins:
