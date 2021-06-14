@@ -18,7 +18,9 @@ module.exports = class Lista{
     }
 
     add(clave, valor){
-        this.#elementos.push({clave, valor});
+        if(this.#elementos.includes(clave) === false){
+            return this.#elementos.push({clave, valor})
+        }
     }
 
     sort(){
