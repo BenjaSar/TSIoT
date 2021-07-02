@@ -1,8 +1,6 @@
 /**** LISTA DE PRUEBAS ***
-- Cuando se agrega un elemento a una lista vacía la lista de claves está ordenada
 - Cuando se agrega un elemento al principio la lista de claves está ordenada
-- Array de claves ordenadas
- */
+*/
 
 const assert = require("chai").assert;
 const Lista = require("../src/lista.js");

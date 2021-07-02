@@ -55,16 +55,13 @@ module.exports = class Lista {
                 }
             })
     }
-
+    
     remove(clave){
-        var i = 0;
-        while (i<this.#elementos.length){
-            if(this.#elementos[i].clave === clave){
-                this.#elementos.splice(i,1)
-            } else {
-                ++i;
-            }
+        const index = this.#elementos.indexOf(clave)
+        while(index>-1){
+            this.#elementos.splice(index,1)
+            index = this.#elementos.indexOf(clave)
+            return index          
         }
-        return this.#elementos
     }
 }
