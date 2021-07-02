@@ -27,30 +27,29 @@ describe("Cuando se agrega un elemento a la lista vacia", function(){
     }) 
 
     it("Recuperar un valor a partir de la clave", function(){
-        assert.equal(lista.find("clave"), "valor")
+        assert.exists(lista.find("clave"), "valor")
     })
     it("Se admite solo texto para clave", function(){
-        assert.isString(lista.find(50), "valor")
+        assert.equal(lista.isString(50), false)
     })
     it("Agregar clave y actualizar clave", function(){
-        assert.equal(lista.actualizar("updatedKey"))
+        assert.equal(lista.actualizar("casa"))
     })
 })
 
-describe("Cuando se agrega elementos a una lista con elementos", function(){
-    var lista = new Lista([{"computador": "mouse"}, {"microfono":"teclado"}]);
+describe("Cuando se agregan elementos a una lista con elementos", function(){
+    var lista = new Lista([{"computador": "mouse"}, {"microfono":"teclado"}, {"mesa": "llave"}, {"celular":"pato"}]);
     
-    it(" Debe retornar la lista de claves ordenada", function(){
-        assert.equal(lista.sort("computador"), "mouse");
-        assert.equal(lista.sort("microfono"), "teclado"); 
+    it(" Debe retornar la lista de claves ordenada en orden ascendente", function(){
+        assert.equal(lista.sort());
+        assert.equal(lista.sort()); 
     })
 });
 
 describe("Cuando se elimina un elemento de la lista", function(){
-    var lista = new Lista()   
+    var lista = new Lista([{"computador": "mouse"}])   
     
     it("Debería retornar -1 lo cual indica que el elemento no está en la lista", function(){
         assert.equal(lista.remove("casa"))
     })
-
 });
