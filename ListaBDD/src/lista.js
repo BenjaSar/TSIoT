@@ -2,7 +2,7 @@ module.exports = class Lista{
     #elementos;
     
     constructor(){
-        this.#elementos = [];
+        this.#elementos = [];;
     }
 
     count() {
@@ -10,11 +10,15 @@ module.exports = class Lista{
     }
 
     find(clave){
-        if (this.count() == 0){
-            return NaN;
-        } else{
-            return this.#elementos[0].valor;
+        var i;
+        if(this.#elementos.length > 0){
+            for (i>0; i<=this.#elementos.length; i++){
+                if(this.#elementos[i].indexOf(clave)>-1){
+                    return this.#elementos[i].valor
+                }      
+            }           
         } 
+        return NaN;
     }
 
     add(clave, valor){

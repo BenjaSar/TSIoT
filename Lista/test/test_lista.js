@@ -1,7 +1,3 @@
-/**** LISTA DE PRUEBAS ***
-- Cuando se agrega un elemento al principio la lista de claves está ordenada
-*/
-
 const assert = require("chai").assert;
 const Lista = require("../src/lista.js");
 
@@ -36,7 +32,8 @@ describe("Cuando se agrega un elemento a la lista vacia", function(){
 })
 
 describe("Cuando se agregan elementos a una lista con elementos", function(){
-    var lista = new Lista([{"computador": "mouse"}, {"microfono":"teclado"}, {"mesa": "llave"}, {"celular":"pato"}]);
+    var lista = new Lista();
+    lista.add([{"computador": "mouse"}, {"microfono":"teclado"}, {"mesa": "llave"}, {"celular":"pato"}])
     
     it(" Debe retornar la lista de claves ordenada en orden ascendente", function(){
         assert.equal(lista.sort());
@@ -44,8 +41,8 @@ describe("Cuando se agregan elementos a una lista con elementos", function(){
     })
 });
 
-describe("Cuando se elimina un elemento de la lista", function(){
-    var lista = new Lista([{"computador": "mouse"}])   
+describe("Cuando se elimina el primer elemento de la lista", function(){
+    var lista = new Lista([{"computador": "mouse"}, {"casa": "puerta"}])   
     
     it("Debería retornar -1 lo cual indica que el elemento no está en la lista", function(){
         assert.equal(lista.remove("casa"))

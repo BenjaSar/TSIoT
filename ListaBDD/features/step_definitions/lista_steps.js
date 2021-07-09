@@ -32,8 +32,8 @@ Then('la lista tiene {int} elemento(s) almacenado(s)', function (cantidad) {
     expect(contexto.lista.count()).to.be.equal(cantidad);
 });
 
-Then('si busco la clave {string} no obtengo ningun valor',function(clave){
-    expect(contexto.lista.find(clave)).to.be.NaN;
+Then('si busco la clave {string} no obtengo ningun valor {}',function(clave){
+    expect(contexto.lista.find(clave)).to.be.equal(NaN);
 });
 
 Then('si busco la clave {string} obtengo el valor {}',function(clave, valor){

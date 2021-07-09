@@ -13,15 +13,15 @@ module.exports = class Lista {
     
     //getter
     find(clave){
-        var i;
+            var i;
         if(this.#elementos.length > 0){
             for (i>0; i<=this.#elementos.length; i++){
                 if(this.#elementos[i].indexOf(clave)>-1){
                     return this.#elementos[i].valor
                 }      
             }           
-        return NaN;
         } 
+        return NaN;
     }
 
     sort(){
@@ -40,7 +40,7 @@ module.exports = class Lista {
         }
     }
 
-    isString(clave){
+    isString(){
         if(this.#elementos.includes("^[a-zA-Z\\s]+$")){
             return true
         }
@@ -59,9 +59,7 @@ module.exports = class Lista {
     remove(clave){
         const index = this.#elementos.indexOf(clave)
         while(index>-1){
-            this.#elementos.splice(index,1)
-            index = this.#elementos.indexOf(clave)
-            return index          
+            return this.#elementos.splice(index,1)          
         }
     }
 }
